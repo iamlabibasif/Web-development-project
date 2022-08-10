@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 :root{
     --ternary: #f0eaea;
 }
@@ -7,6 +9,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'padding', sans-serif;
+}
+
+body {
+    height: 5000px;
+    background-color: var(--ternary);
 }
 
 a{
@@ -47,7 +54,7 @@ nav{
 nav ul li {
     list-style: none;
     display: inline-block;
-    padding: 25px 40px;
+    padding: 20px 5px;
     font-size: large;
 }
 nav ul li a {
@@ -78,12 +85,12 @@ nav ul li a:hover:after {
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/self.png);
+    background-image: url(/Web-development-project/images/self.png);
     background-size: contain;
-    margin-left: 10;
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 22em;
+    
 }
 
 .btn {
@@ -99,7 +106,8 @@ nav ul li a:hover:after {
     background-size: 152% 100%;
     background: rgb(241, 11, 88);
     border: 2px solid rgb(241, 11, 88);
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 
 }
 
@@ -132,6 +140,7 @@ nav ul li a:hover:after {
     font-size: 36px;
     font-weight: 800;
     line-height: 90px
+    
 }
 
 .content h1 span {
@@ -139,5 +148,177 @@ nav ul li a:hover:after {
 }
 
 .content p {
-    width: 60%
+    width: 60%;
+    color: gray;
+    font-size: 19px;
 }
+
+.About, .ContactUs{
+    background-color: var(--ternary);
+}
+
+.About .container h1 {
+    text-align: center;
+    padding-bottom: 7px;
+    color: black;
+    font-size: 37px;
+}
+
+.About .container h3 {
+    text-align: center;
+    padding-bottom: 7px;
+    color: rgb(241, 11, 88);
+    font-size: 27px;
+}
+
+.About .container h1 span {
+    color: rgb(241, 11, 88);
+}
+
+
+.About .container {
+    padding: 200px;
+    font-size: 19px;
+    color: gray;
+    width: 80%;
+    margin: auto;
+}
+
+.About .container .aboutContent .icon img{
+    width: 35px;
+    margin-top: 10px;
+}
+
+.ContactUs .container .row {
+    text-align: center;
+    font-size: 23px;
+}
+
+.ContactUs .container .row h1 span {
+    color: rgb(241, 11, 88);
+}
+
+.ContactUs .container .row p {
+    color: gray;
+}
+
+.ContactUs .container .row .card-wrapper img{
+    margin-top: 2rem;
+    margin-bottom: .7rem;
+    width: 40px;
+}
+
+.ContactUs .container .row .card-wrapper {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ContactUs .container .row .card-wrapper .card-1 h6, .ContactUs .container .row .card-wrapper .card-2 h6 {
+    color: gray;
+    font-size: 15px;
+}
+
+.ContactUs .container .row .forms-wrapper {
+    padding: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    margin-top: 4rem;
+}
+
+.ContactUs .container .row .forms-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+
+.ContactUs .container .row .forms-wrapper input, .ContactUs .container .row .forms-wrapper2 input,
+.ContactUs .container .row .forms-wrapper2 textarea {
+    padding: .5rem;
+    border: 2px solid rgb(241, 11, 88);
+    background-color: var(--ternary);
+    font-size: 1rem;
+    outline: none;
+}
+
+.container1 {
+    width: 90%;
+    margin: 10px auto;
+    margin-top: 10%;
+}
+
+.carousel {
+    border: 4px solid rgb(241, 11, 88);
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    border: 1px solid rgb(241, 11, 88);
+    position: relative;
+    transition: all 0.5s;
+}
+
+.slider section1 {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 404%;
+    cursor: pointer;
+    size: 50px;
+}
+
+.controls .arrow i {
+    font-size: 60px;
+}
+
+.arrow.left {
+    left: 80px;
+}
+
+.arrow.right {
+    right:80px;  
+}
+
+.carousel ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    top: 431%;
+}
+
+.carousel ul li {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 50px;
+    margin: 10px; 
+    background: rgb(15, 15, 15);;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: var(--ternary);
+}
+
+
+
